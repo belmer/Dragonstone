@@ -10,6 +10,13 @@ I included a compiled files inside "Chat app and Server". Open or Double Click "
 The default port is 3000, so make sure that port is not used by other application.
 If you have issue running the web server. Try running it with administrator privilige. (Right click Dragonstone.exe and choose "Run as Administrator"). Once the web server is running, navigate to "http://localhost:3000". You should be able to get the Chat App
 
+Note: Make sure you have internet connection when running the Chat Client because it is using jquery from google cdn. Also bootstrap and font-awesome. 
+
+If you don't have internet, please download the following:
+- twitter bootstrap 
+- font-awesome
+- jquery library
+
 =====================================================
 
 Simple Web Server

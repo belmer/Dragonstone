@@ -1,0 +1,49 @@
+
+<!DOCTYPE HTML>
+<html manifest="" lang="en-US">
+	<head>
+		<title>Client</title>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+		<link href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
+		<link href="http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+		<link href="ace.min.css" rel="stylesheet">
+	</head>
+
+	<body>
+		<div class="main-container container-fluid">
+			<div class="row-fluid">
+				<div class="page-content">
+					<div class="span5">
+						<div class="page-header position-relative">
+							<h1>HttpClient<small><i class="icon-double-angle-right"></i> chat</small></h1>
+						</div>
+						<button type="button" id="connect" class="btn btn-success">Connect</button>
+                        <div id="alert-contaner" style="display:none" class="alert alert-block"><button type="button" class="close" data-dismiss="alert">
+									<i class="icon-remove"></i>
+								</button></div>
+						<div class="widget-box">
+							<!-- Chat Area-->
+							<div class="widget-header widget-header-small header-color-blue">
+								<h6><i class="icon-comments"></i> What do you have in mind?</h6>
+							</div>
+							<div class="widget-body">
+								<div class="widget-main padding-4">
+                                    <div id="messages" style="height:400px;overflow-y:auto">
+									    
+                                    </div>
+								</div>
+								<div class="widget-toolbox padding-8 clearfix">
+									<textarea id="chatBox" class="span12"></textarea>
+									<button class="btn btn-info btn-small pull-right" id="sendChat"><i class="icon-comment"></i> Send</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+
+	<script src="client.js" type="text/javascript"></script>
+</html>

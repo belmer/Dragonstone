@@ -13,6 +13,7 @@ If you have issue running the web server. Try running it with administrator priv
 =====================================================
 
 Simple Web Server
+=====================================================
 	- Accepts http requests (e.g POST, GET)
 	- Accepts multiple connection
 	- Accepts to any request going to port 3000 (this is configurable on App.Config file)
@@ -34,6 +35,7 @@ Simple Web Server
 			- Disconnect from the server
 
 Web Server
+=====================================================
 	- Base URL (http://localhost)
 		- FileRequest
 		- Respond the file being requested. As for the host url it will locate the file Client.html, read the file and output
@@ -55,6 +57,7 @@ Web Server
 		- Disconnect user from the server.
 		- Once this method is called, the client will then be removed from the client collection.
 Chat Client
+=====================================================
 	The client chat app will enable user to communicate to each other via the web server. There will be "Connect" button that will enable you to be connected to the server and start chatting. Once you click "Connect" button, this will create a guid and stored it into client cookie(clientID). This is used to identify each client connected to the server. The "client_guid" will then be sent to the server through (http://localhost/connect). Once succesfully connected, will store the client state to the cookie as "connected'. However, whenever you refresh your browser your cookie will be deleted and need to reconnect. (This is ofcourse can be configured to retain your session).
 
 	Once connected to the server, the client will also start getting messages from the server via ajax request. This is done every 2 seconds. If there is a message received from the server or other client. This will then be added to the DOM on the message area. The "message_guid" will be used as the "element id" to avoid duplication. Another notable update when you are connected is the "Connect" button will be updated to "Disconnect". This will enable you to disconnect from server and stop getting messages.

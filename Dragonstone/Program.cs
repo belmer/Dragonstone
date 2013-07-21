@@ -88,7 +88,5 @@ namespace Dragonstone
             context.Response.StatusCode = (int)HttpStatusCode.OK;
             context.Response.OutputStream.Close();
         }
-        
-
     }
 }
